@@ -13,7 +13,7 @@ setup(
     description=DESCRIPTION,
     url=URL,
     version=VERSION,
-    packages=find_packages(exclude=("efficientdet.test")),
+    packages=find_packages(),
     ext_modules=cythonize("utils/compute_overlap.pyx"),
     include_dirs=[numpy.get_include()]
 )
