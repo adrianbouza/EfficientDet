@@ -11,7 +11,7 @@ setup(
     name=NAME,
     description=DESCRIPTION,
     url=URL,
-    version=VERSION
+    version=VERSION,
     ext_modules=cythonize("utils/compute_overlap.pyx"),
     include_dirs=[numpy.get_include()]
 )
