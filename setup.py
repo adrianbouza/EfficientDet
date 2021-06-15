@@ -6,7 +6,7 @@ import numpy
 NAME = "efficientdet"
 DESCRIPTION = "EfficientDet model re-implementation. Keras and TensorFlow Keras."
 URL = "https://github.com/adrianbouza/EfficientDet"
-VERSION = 1.0.0
+VERSION = "1.0.0"
 setup(
     name=NAME,
     description=DESCRIPTION,
