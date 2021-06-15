@@ -62,7 +62,7 @@ def inject_tfkeras_modules(func):
 
 def init_keras_custom_objects():
     import keras
-    import efficientnet as model
+    import efficientdet.efficientnet as model
 
     custom_objects = {
         'swish': inject_keras_modules(model.get_swish)(),
@@ -74,7 +74,7 @@ def init_keras_custom_objects():
 
 def init_tfkeras_custom_objects():
     import tensorflow.keras as tfkeras
-    import efficientnet as model
+    import efficientdet.efficientnet as model
 
     custom_objects = {
         'swish': inject_tfkeras_modules(model.get_swish)(),
