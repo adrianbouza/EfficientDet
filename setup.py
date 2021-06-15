@@ -1,6 +1,7 @@
 from distutils.core import setup
 from Cython.Build import cythonize
 import numpy
+from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = "efficientdet"
@@ -12,6 +13,7 @@ setup(
     description=DESCRIPTION,
     url=URL,
     version=VERSION,
+    packages=find_packages(exclude=("test")),
     ext_modules=cythonize("utils/compute_overlap.pyx"),
     include_dirs=[numpy.get_include()]
 )
