@@ -3,8 +3,8 @@ import cv2
 import os
 import numpy as np
 import time
-from utils import preprocess_image
-from utils.anchors import anchors_for_shape, AnchorParameters
+from efficientdet.utils import preprocess_image
+from efficientdet.utils.anchors import anchors_for_shape, AnchorParameters
 import os.path as osp
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'

@@ -10,12 +10,11 @@ import tensorflow as tf
 from tensorflow.keras import layers
 from tensorflow.keras import initializers
 from tensorflow.keras import models
-from tfkeras import EfficientNetB0, EfficientNetB1, EfficientNetB2
-from tfkeras import EfficientNetB3, EfficientNetB4, EfficientNetB5, EfficientNetB6
-
-from layers import ClipBoxes, RegressBoxes, FilterDetections, wBiFPNAdd, BatchNormalization
-from initializers import PriorProbability
-from utils.anchors import anchors_for_shape
+from efficientdet.tfkeras import EfficientNetB0, EfficientNetB1, EfficientNetB2
+from efficientdet.tfkeras import EfficientNetB3, EfficientNetB4, EfficientNetB5, EfficientNetB6
+from efficientdet.layers import ClipBoxes, RegressBoxes, FilterDetections, wBiFPNAdd, BatchNormalization
+from efficientdet.initializers import PriorProbability
+from efficientdet.utils.anchors import anchors_for_shape
 import numpy as np
 
 w_bifpns = [64, 88, 112, 160, 224, 288, 384]

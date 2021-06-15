@@ -6,9 +6,9 @@ import time
 from utils import preprocess_image
 from tensorflow.python.platform import gfile
 
-from utils.anchors import anchors_for_shape
-from utils.draw_boxes import draw_boxes
-from utils.post_process_boxes import post_process_boxes
+from efficientdet.utils.anchors import anchors_for_shape
+from efficientdet.utils.draw_boxes import draw_boxes
+from efficientdet.utils.post_process_boxes import post_process_boxes
 
 
 def get_frozen_graph(graph_file):

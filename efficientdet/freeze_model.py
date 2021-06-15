@@ -1,4 +1,4 @@
-from model import efficientdet
+from efficientdet.model import efficientdet
 import cv2
 import os
 import numpy as np

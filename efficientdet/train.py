@@ -33,7 +33,7 @@ from augmentor.color import VisualEffect
 from augmentor.misc import MiscEffect
 from model import efficientdet
 from losses import smooth_l1, focal, smooth_l1_quad
-from efficientnet import BASE_WEIGHTS_PATH, WEIGHTS_HASHES
+from efficientdet.efficientnet import BASE_WEIGHTS_PATH, WEIGHTS_HASHES
 
 
 def makedirs(path):
